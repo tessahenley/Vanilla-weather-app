@@ -1,3 +1,22 @@
+ul{
+    color: rgba(39,33,66,.4);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+li{
+    margin: 0px;
+    padding: 0px;
+}
+
+img{
+    vertical-align: top;
+}
 .background{
     background-color:#45493f;
 }
@@ -20,24 +39,16 @@
 
 .active-weather{
     color: #000;
-    font-size: 38px;
-    font-weight: 700;
+    font-size: 42px;
     line-height: 48px;
+    font-weight: 700;
     margin: 20px 0 10px;  
 }
-
-ul{
-    color: rgba(39,33,66,.4);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 20px;
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-    margin-bottom: 10px;
+.temperature{
+    font-size: 48px;
+    line-height: 1;
+    vertical-align: top;
 }
-
-li{
-    margin: 0px;
-    padding: 0px;
+.units{
+    font-size: medium;
 }
