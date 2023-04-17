@@ -8,12 +8,10 @@ ul{
     padding: 0px;
     margin-bottom: 10px;
 }
-
 li{
     margin: 0px;
     padding: 0px;
 }
-
 img{
     vertical-align: top;
 }
@@ -42,7 +40,7 @@ img{
     font-size: 42px;
     line-height: 48px;
     font-weight: 700;
-    margin: 20px 0 10px;  
+    margin: 20px 0 10px;
 }
 .temperature{
     font-size: 48px;
@@ -51,4 +49,7 @@ img{
 }
 .units{
     font-size: medium;
+}
+.weather-type{
+    text-transform: capitalize;
 }
