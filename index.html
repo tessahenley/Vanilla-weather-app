@@ -12,9 +12,29 @@
 <body class="background">
     <div class ="container">
         <div class = "weather-app">
-    <h1 class="title">
-        Wedding Forecast
-    </h1>
+            <h1 class="title">
+            Weather Forecast
+            </h1>
+        <form id="search-form">
+            <div class="row">
+                <div class="col-9">
+                  <input
+                    type="search"
+                    placeholder="Type a city.."
+                    class="form-control"
+                    id="city-input"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="col-3">
+                  <input
+                    type="submit"
+                    value="Search"
+                    class="btn btn-primary w-100"
+                  />
+                </div>
+              </div>
+        </form>
     <h2 class="active-weather" id="city"></h2>
     <ul>
         <li id="date"></li>
