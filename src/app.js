@@ -1,3 +1,14 @@
+function handleSubmit(event){
+    event.preventDefault();
+    let cityInputElement = document.querySelector("#city-input");
+    search(cityInputElement.value);
+}
+function search(city){
+    let apiKey = "f5463cfa1b8a4atd0o0764e3fff9eb42";
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`;
+    axios.get(apiUrl).then(displayTemperature);
+}
+
 function formatDate(timestamp){
     let date = new Date(timestamp);
     let hours = date.getHours();
@@ -39,8 +50,8 @@ let iconElement = document.querySelector("#icon");
 iconElement.setAttribute("src",`http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`);
 iconElement.setAttribute("alt", response.data.condition.description);
 }
-let apiKey = "f5463cfa1b8a4atd0o0764e3fff9eb42";
-let city = "Orlando";
-let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`;
 
-axios.get(apiUrl).then(displayTemperature);
+search("New York");
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
