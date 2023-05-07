@@ -51,7 +51,7 @@ iconElement.setAttribute("src",`http://shecodes-assets.s3.amazonaws.com/api/weat
 iconElement.setAttribute("alt", response.data.condition.description);
 }
 
-search("New York");
+search("Asheville");
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);

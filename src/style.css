@@ -53,3 +53,13 @@ img{
 .weather-type{
     text-transform: capitalize;
 }
+.weather-forecast{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.weather-forecast-date{
+    font-size: 16px;
+}
+.weather-forecast-temp{
+    font-size: 13px;
+}
