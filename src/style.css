@@ -42,6 +42,10 @@ img{
     font-weight: 700;
     margin: 20px 0 10px;
 }
+.btn-primary{
+    background-color: #45493f;
+    outline-color: #eff3ec;
+}
 .temperature{
     font-size: 48px;
     line-height: 1;
