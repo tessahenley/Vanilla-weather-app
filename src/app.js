@@ -32,6 +32,29 @@ function formatDate(timestamp){
     return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+    let forecastElement = document.querySelector("#forecast");
+    let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
+    let forecastHTML = `<div class="row">`;
+    days.forEach(function (day) {
+    forecastHTML = 
+    forecastHTML +
+    `
+        <div class="col-2">
+            <div class="weather-forecast-date">${day}</div>
+                <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
+                  width="45"/>
+                    <div class="weather-forecast-temp">
+                        <span class = "weather-forecast-temp-max">70°</span>
+                        <span class = "weather-forecast-temp-min">58°</span>
+                        </div>
+                </div>
+            `;
+    });
+    forecastHTML = forecastHTML + `<div>`;
+    forecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature (response){
 console.log(response.data.temperature.current);
 let temperatureElement = document.querySelector("#temp");
@@ -52,6 +75,7 @@ iconElement.setAttribute("alt", response.data.condition.description);
 }
 
 search("Asheville");
+displayForecast();
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
