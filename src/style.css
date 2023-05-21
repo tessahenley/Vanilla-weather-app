@@ -67,3 +67,7 @@ img{
 .weather-forecast-temp{
     font-size: 13px;
 }
+
+.weather-forecast-temp-min{
+    opacity: 0.5;
+}
